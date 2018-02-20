@@ -4,8 +4,12 @@ library(shiny)
 # outside shinyServer(): shared by all users
 randomValue1 <- paste(sample(c(0:9,LETTERS),10),sep='',collapse='')
 
+## STuff out here will be called when the app is called.
+
 shinyServer(function(input,output){
 
+  ## Stuff in here will be called each time the server serves a new page.
+  
   # within shinyServer() : specific to each user  
   randomValue2 <- paste(sample(c(0:9,LETTERS),5),sep='',collapse='')
   
