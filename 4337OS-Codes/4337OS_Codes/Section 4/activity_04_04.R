@@ -3,7 +3,7 @@
 # install the package bigvis
 # *** you only need to do this once.***
 # install.packages("devtools")
-# devtools::install_github("bigvis")
+devtools::install_github("hadley/bigvis")
 
 # loading the libraries
 library(ggplot2)
