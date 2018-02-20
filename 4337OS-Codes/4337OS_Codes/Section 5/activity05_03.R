@@ -3,7 +3,7 @@
 library(ggplot2)
 
 # The default colour scheme picks evenly spaced hues around the hue-chroma-luminance colour wheel.
-p <- ggplot(diamonds) + geom_histogram(aes(x = cut,fill = clarity))
+p <- ggplot(diamonds) + geom_histogram(aes(x = cut,fill = clarity), stat = "count")
 p + ggtitle("default palette")
 
 # user-defined palette
