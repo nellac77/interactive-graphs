@@ -24,7 +24,7 @@ p +
 
 # Swapping coordinates
 # default x vs y plot
-p <- ggplot(mpg, aes(x = manufacturer)) + geom_histogram() + ylab("Number") + xlab('') 
+p <- ggplot(mpg, aes(x = manufacturer)) + geom_histogram(stat = "count") + ylab("Number") + xlab('') 
 
 # flipping axes
 p + coord_flip() + ggtitle('Flipped axes')
