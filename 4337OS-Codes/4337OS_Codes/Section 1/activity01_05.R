@@ -10,5 +10,6 @@ head(small)
 
 # example 01
 p <- ggplot(small, aes(x = carat, y = price))
+# p + geom_point()
 print(p + geom_point())
 p + geom_point(aes(color = cut))
